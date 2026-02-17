@@ -48,110 +48,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webprogramming</title>
+    <link rel="stylesheet" href="style.css">
     <?php echo $message; ?>
-    <style>
-        
-        :root {
-            --color-background: #ffffff; 
-            --color-foreground: #f8f9fa; 
-            --color-text: #333333;       
-            --color-primary: #007bff;    
-            --color-primary-hover: #0056b3;
-            --color-border-subtle: #e9ecef;
-            --main-bg: #2c3e50;
-            --main-heading-color: #ffffff;
-            --main-text-color: #ecf0f1;
-            --bottom-bg: #233140;
-            --bottom-text-color: #bdc3c7;
-            --bottom-link-hover: #ffffff;
-            --form-button-bg: #3498db;
-            --form-button-text: #ffffff;
-            --font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            --font-weight-normal: 400;
-            --font-weight-bold: 700;
-            --navbar-height: 70px;
-            --navbar-padding: 1rem;
-            --container-width: 1140px;
-            --transition-speed: 0.2s;
-        }
-
-        *, *::before, *::after { box-sizing: border-box; }
-        
-        .registration-container { max-width: 700px; margin: 30px auto; font-family: sans-serif; }
-        .registration-form fieldset { border: 1px solid #ddd; border-radius: 6px; padding: 20px; margin-bottom: 25px; }
-        .registration-form legend { font-size: 1.2rem; font-weight: 600; padding: 0 10px; }
-        .form-row { display: flex; gap: 20px; margin-bottom: 15px; }
-        .form-group { flex: 1; }
-        .form-group:only-child { margin-bottom: 15px; }
-        .form-group label { display: block; margin-bottom: 5px; font-weight: 500; }
-        .form-group input, .form-group select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; box-sizing: border-box; }
-        
-        body {
-            margin: 0;
-            font-family: var(--font-family-sans-serif);
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            background-image: url("https://images.template.net/435560/Education-Background-Template-edit-online.png");
-            background-size: cover;        
-            background-position: center;   
-            background-repeat: no-repeat;  
-            background-attachment: fixed; 
-        }
-        
-        main { flex-grow: 1; }
-        .container { width: 90%; max-width: 1140px; margin: 0 auto; }
-        ul { list-style: none; margin: 0; padding: 0; }
-        a { text-decoration: none; color: var(--color-text); }
-
-        .navbar {
-            background-color: #ffffff; 
-            height: var(--navbar-height);
-            display: flex;
-            align-items: center;
-            border-bottom: 1px solid var(--color-border-subtle);
-        }
-
-        .navbar__container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            max-width: var(--container-width);
-            margin: 0 auto;
-            padding: 0 var(--navbar-padding);
-        }
-        
-        .navbar__brand { font-size: 1.5rem; font-weight: var(--font-weight-bold); }
-        .navbar__toggle { display: block; background: transparent; border: none; cursor: pointer; }
-        .navbar__toggle .bar { display: block; width: 25px; height: 3px; margin: 5px auto; background-color: var(--color-text); transition: 0.2s; }
-
-        .navbar__menu {
-            display: none; 
-            flex-direction: column;
-            width: 100%;
-            position: absolute;
-            top: var(--navbar-height);
-            left: 0;
-            background-color: #fff;
-            z-index: 1000;
-        }
-        
-        .navbar__menu.is-active { display: flex; }
-        .navbar__link { display: block; padding: 1.5rem; }
-        .navbar__link--cta { color: var(--color-primary); font-weight: bold; }
-
-        @media (min-width: 768px) {
-            .navbar__toggle { display: none; }
-            .navbar__menu { display: flex; position: static; width: auto; flex-direction: row; }
-            .navbar__list { display: flex; }
-            .navbar__link { padding: 0.5rem 1rem; }
-        }
-
-        .content { text-align: center; padding: 2rem 0; color: #13120b; }
-        .submit-btn { width: 100%; padding: 15px; background: #28a745; color: white; border: none; border-radius: 5px; font-size: 1.2rem; font-weight: bold; cursor: pointer; }
-        .footer-newsletter__bottom { background-color: var(--bottom-bg); color: var(--bottom-text-color); padding: 1.5rem 0; font-size: 0.875rem; }
-    </style>
+    
 </head>
 <body>
 
@@ -202,23 +101,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </footer>
 
-    <script>
-        // Navbar Toggle Script
-        document.getElementById('navbarToggle').addEventListener('click', function () {
-            this.classList.toggle('is-active');
-            document.getElementById('navbarMenu').classList.toggle('is-active');
-        });
-
-        // Validation Script
-        document.getElementById("checkoutForm").addEventListener("submit", function (e) {
-            const course = document.getElementById("Course").value;
-            const confirmCourse = document.getElementById("ConfirmCourse").value;
-
-            if (course !== confirmCourse) {
-                e.preventDefault(); 
-                alert("Courses do not match!");
-            }
-        });
-    </script>
+<script src="js/script.js"></script>
 </body>
+
 </html>
