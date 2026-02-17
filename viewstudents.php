@@ -23,136 +23,9 @@ try {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Webprogramming - View Students</title>
-    <style>
-       
-        :root {
-            --color-background: #ffffff; 
-            --color-foreground: #f8f9fa; 
-            --color-text: #333333;       
-            --color-primary: #007bff;    
-            --color-primary-hover: #0056b3;
-            --color-border-subtle: #e9ecef;
-            --main-bg: #2c3e50;
-            --main-heading-color: #ffffff;
-            --main-text-color: #ecf0f1;
-            --bottom-bg: #233140;
-            --bottom-text-color: #bdc3c7;
-            --font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            --font-weight-normal: 400;
-            --font-weight-bold: 700;
-            --navbar-height: 70px;
-            --navbar-padding: 1rem;
-            --container-width: 1140px;
-            --transition-speed: 0.2s;
-        }
-
-        *, *::before, *::after { box-sizing: border-box; }
-
-        body {
-            margin: 0;
-            font-family: var(--font-family-sans-serif);
-            line-height: 1.5;
-            color: var(--color-text);
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            background-image: url("https://images.template.net/435560/Education-Background-Template-edit-online.png");
-            background-size: cover;        
-            background-position: center;   
-            background-repeat: no-repeat;  
-            background-attachment: fixed; 
-        }
-        
-        main { flex-grow: 1; }
-
-        .navbar {
-            background-color: #ffffff; 
-            height: var(--navbar-height);
-            display: flex;
-            align-items: center;
-            border-bottom: 1px solid var(--color-border-subtle);
-        }
-
-        .navbar__container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            max-width: var(--container-width);
-            margin: 0 auto;
-            padding: 0 var(--navbar-padding);
-        }
-        
-        .navbar__brand { font-size: 1.5rem; font-weight: var(--font-weight-bold); }
-
-        .navbar__toggle {
-            display: block; 
-            padding: 0.5rem;
-            border: none;
-            background: transparent;
-            cursor: pointer;
-        }
-
-        .navbar__toggle .bar {
-            display: block;
-            width: 25px;
-            height: 3px;
-            margin: 5px auto;
-            background-color: var(--color-text);
-            transition: all var(--transition-speed) ease-in-out;
-        }
-
-        .navbar__menu {
-            display: none; 
-            flex-direction: column;
-            width: 100%;
-            position: absolute;
-            top: var(--navbar-height);
-            left: 0;
-            background-color: var(--color-background);
-            z-index: 1000;
-        }
-        
-        .navbar__menu.is-active { display: flex; }
-        .navbar__list { list-style: none; margin: 0; padding: 0; }
-        .navbar__link { display: block; padding: 1.5rem; text-decoration: none; color: var(--color-text); }
-        .navbar__link--cta { color: var(--color-primary); font-weight: var(--font-weight-bold); }
-
-        @media (min-width: 768px) {
-            .navbar__toggle { display: none; }
-            .navbar__menu { display: flex; position: static; width: auto; background-color: transparent; }
-            .navbar__list { display: flex; align-items: center; }
-            .navbar__link { padding: 0.5rem 1rem; }
-        }
-
-        .content { text-align: center; padding: 5rem 0; color: #070706; }
-
-        table.GeneratedTable {
-            width: 75%;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #fff5f5;
-            border-collapse: collapse;
-            border: 2px solid #ffcc00;
-            color: #000000;
-        }
-
-        table.GeneratedTable td, table.GeneratedTable th {
-            border: 2px solid #ffcc00;
-            padding: 10px;
-        }
-
-        table.GeneratedTable thead { background-color: #ffcc00; }
-
-        .footer-newsletter__bottom {
-            background-color: var(--bottom-bg);
-            color: var(--bottom-text-color);
-            padding: 1.5rem 0;
-            font-size: 0.875rem;
-            margin-top: auto;
-        }
-    </style>
+    
 </head>
 <body>
 
@@ -226,4 +99,5 @@ try {
         });
     </script>
 </body>
+
 </html>
