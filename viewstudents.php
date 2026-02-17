@@ -23,7 +23,7 @@ try {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="style.css">
     <title>Webprogramming - View Students</title>
     
 </head>
@@ -85,19 +85,8 @@ try {
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const navbarToggle = document.getElementById('navbarToggle');
-            const navbarMenu = document.getElementById('navbarMenu');
-
-            if (navbarToggle && navbarMenu) {
-                navbarToggle.addEventListener('click', function () {
-                    navbarToggle.classList.toggle('is-active');
-                    navbarMenu.classList.toggle('is-active');
-                });
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
+
