@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-// 1. Database Connection
 $host = 'localhost';
 $db   = 'student_db';
 $user = 'root';
@@ -43,76 +42,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Webprogramming - Login</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-image: url("https://images.template.net/435560/Education-Background-Template-edit-online.png");
-            background-size: cover;        
-            background-position: center;   
-            background-repeat: no-repeat;  
-            background-attachment: fixed; 
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .login-form-container {
-            max-width: 400px;
-            width: 90%;
-            padding: 30px;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        }
-
-        .login-form-header h2 { margin: 0 0 10px; text-align: center; color: #333; }
-        .login-form-header p { text-align: center; color: #666; margin: 0 0 30px; font-size: 0.95rem; }
-
-        .form-group { margin-bottom: 20px; }
-        .form-group label { display: block; margin-bottom: 8px; font-weight: 600; }
-        .form-group input { 
-            width: 100%; 
-            padding: 12px; 
-            border: 1px solid #ccc; 
-            border-radius: 5px; 
-            box-sizing: border-box;
-        }
-
-        .error-msg {
-            color: #721c24;
-            background-color: #f8d7da;
-            border: 1px solid #f5c6cb;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .submit-btn {
-            width: 100%;
-            padding: 12px;
-            background-color: #007bff;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            font-size: 1.1rem;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        
-        .submit-btn:hover { background-color: #0056b3; }
-
-        .form-options {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-            font-size: 0.9rem;
-        }
-    </style>
+    
+    
 </head>
 <body>
 
@@ -150,4 +83,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </div>
 
 </body>
+
 </html>
