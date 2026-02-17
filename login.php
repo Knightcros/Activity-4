@@ -16,17 +16,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $email = $_POST['email'];
         $password = $_POST['password'];
 
-        // 2. Check for user (Assuming a 'teachers' or 'users' table)
         $stmt = $pdo->prepare("SELECT * FROM teachers WHERE email = :email");
         $stmt->execute([':email' => $email]);
         $teacher = $stmt->fetch();
 
-        // 3. Verify Password (In production, use password_verify with hashed passwords!)
         if ($teacher && $password === $teacher['password']) {
             $_SESSION['loggedin'] = true;
             $_SESSION['teacher_name'] = $teacher['name'];
             
-            // Redirect to the View Students page
             header("Location: view_students.php");
             exit;
         } else {
@@ -82,6 +79,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </form>
 </div>
 
+<script src="script.js"></script>
 </body>
 
 </html>
+
