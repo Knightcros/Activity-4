@@ -41,59 +41,8 @@ try {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webprogramming - Update Students</title>
-    <style>
-       
-        :root {
-            --color-background: #ffffff; 
-            --color-foreground: #f8f9fa; 
-            --color-text: #333333;       
-            --color-primary: #007bff;    
-            --color-primary-hover: #0056b3;
-            --color-border-subtle: #e9ecef;
-            --main-bg: #2c3e50;
-            --bottom-bg: #233140;
-            --bottom-text-color: #bdc3c7;
-            --form-button-bg: #3498db;
-            --form-button-text: #ffffff;
-            --font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            --navbar-height: 70px;
-            --transition-speed: 0.2s;
-        }
-
-        *, *::before, *::after { box-sizing: border-box; }
-        
-        body {
-            margin: 0;
-            font-family: var(--font-family-sans-serif);
-            background-image: url("https://images.template.net/435560/Education-Background-Template-edit-online.png");
-            background-size: cover;        
-            background-attachment: fixed; 
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-      
-        .registration-container { max-width: 700px; margin: 30px auto; background: rgba(255,255,255,0.9); padding: 20px; border-radius: 8px; }
-        .registration-form fieldset { border: 1px solid #ddd; border-radius: 6px; padding: 20px; margin-bottom: 25px; }
-        .form-group { margin-bottom: 15px; }
-        .form-group label { display: block; margin-bottom: 5px; font-weight: 500; color: #333; }
-        .form-group input { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
-        
-        .navbar { background-color: #ffffff; height: var(--navbar-height); display: flex; align-items: center; border-bottom: 1px solid var(--color-border-subtle); }
-        .navbar__container { display: flex; justify-content: space-between; align-items: center; width: 90%; max-width: 1140px; margin: 0 auto; }
-        .navbar__brand { font-size: 1.5rem; font-weight: 700; text-decoration: none; color: #333; }
-        
-        .navbar__list { list-style: none; display: flex; gap: 10px; }
-        .navbar__link--cta { color: var(--color-primary); font-weight: bold; text-decoration: none; padding: 0.5rem 1rem; }
-
-        .content { text-align: center; padding: 2rem 0; color: #13120b; }
-        .submit-btn { width: 100%; padding: 15px; background: #28a745; color: white; border: none; border-radius: 5px; font-size: 1.2rem; font-weight: bold; cursor: pointer; }
-        
-        .alert { padding: 10px; margin-bottom: 20px; border-radius: 4px; background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
-
-        .footer-newsletter__bottom { background-color: var(--bottom-bg); color: var(--bottom-text-color); padding: 1.5rem 0; text-align: center; margin-top: auto; }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
 
@@ -175,12 +124,7 @@ try {
         </div>
     </footer>
 
-    <script>
-        
-        const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.has('success')) {
-            alert("Student details updated successfully!");
-        }
-    </script>
+<script src="js/script.js"></script>
 </body>
+
 </html>
